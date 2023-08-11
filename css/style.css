@@ -49,9 +49,13 @@ html{
     transition: color 0.3s ease;
 }
 /* home section styling */
+.home .home-content .text-3{
+    margin: 5px 0;
+    font-size: 40px;
+}
 .home{
 
-    background: url("../images/banner.jpg")  no-repeat 100% 0px;
+    background: url("../images/banner.jpg")  no-repeat 100% 0px #000;
     height: 100vh;
     color: #fff;
     background-size: cover;
@@ -65,10 +69,7 @@ html{
     font-size: 27px;
 }
 
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
+
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
@@ -148,7 +149,18 @@ a
     text-decoration: none;
     margin: 0;
 }
-
+/* about page styles */
+.about
+{
+  margin: 5px;
+  background: #000;
+  opacity: 0.9;
+  padding: 5px;
+}
+.about .col-sm-4 img
+{
+    width: 100%;
+}
 
 
 @media screen and  (min-width: 680px) 
@@ -158,6 +170,11 @@ a
         font-size: 75px;
         font-weight: 600;
         margin-left: -3px;
+    }
+    /* .about, .home */
+    .home
+    {
+        height: 100vh;
     }
 
 }
